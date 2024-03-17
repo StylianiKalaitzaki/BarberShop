@@ -5,7 +5,7 @@
 @import url(./_variables.css);
 
 /* import global style */
-@import url(./_global.css);
+@import url(./global.css);
 
 /* Start Navigation */
 
