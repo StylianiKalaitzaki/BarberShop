@@ -1,0 +1,85 @@
+/* if the viewport is equal to 340px or less*/
+
+@media only screen and (max-width:340px){
+    .header_area .main-menu .navbar,
+    .header_area .main-menu .navbar .navbar-brand,
+    .site-main .booking-area .book .booking-title,
+    .site-main .booking-area .book .booking-title p, h4,
+    .site-main .services-area,
+    .site-main .booking-area .book,
+    .site-main .about-area, .site-main .products-area,
+    .site-main .clients-area,
+    .site-main .booking-area
+    {
+        padding:2%;
+        margin:0%;
+    }
+
+    .site-main .site-banner .site-title h1{
+        font-size: 41px;
+    }
+
+    .site-main .booking-area .book form .input-textbox input{
+        width: 15rem;
+        margin: 1rem;
+    }
+
+    .site-main > .services-area .services{
+        width:13rem;
+    }
+
+    .header_area{
+        position: fixed;
+        width: 100%;
+    }
+    
+    .site-main {
+        width:587px;
+    }
+
+    .footer-area{
+        width:587px;
+    }
+}
+
+/* if the viewport is equal to 792px or less*/
+@media only screen and (max-width:792px){
+    .site-main .about-area .about-title h2 > span{
+        font-size:31px;
+        letter-spacing: 10px;
+    }
+
+    .site-main .about-area .about-title p{
+        padding: 0%;
+    }
+
+    .site-main .booking-area .book form .input-textbox input{
+        width: 15rem;
+        margin: 5%;
+    }
+
+    .site-main .booking-area .book form .btn,
+    .site-main .booking-area .book form .form-select,
+    .site-main .booking-area .book form label
+    {
+        margin: 5%;
+    }
+
+}
+
+/* if the viewport is equal to 1910px or less*/
+@media only screen and (max-width:1910px){
+    .header_area .main-menu .navbar{
+        padding:1rem;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .site-main .services-area,
+    .site-main .services-area .services-title,
+    .site-main .about-area{
+        padding:3% 4%;
+    }
+}

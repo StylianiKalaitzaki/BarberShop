@@ -1,0 +1,412 @@
+/*import fonts from fonts.css file*/
+@import url(./fonts.css);
+
+/* css variables */
+@import url(./partials/_variables.css);
+
+/* import global style */
+@import url(./partials/_global.css);
+
+/* Start Navigation */
+
+/* start logo */
+.header_area .main-menu .navbar .navbar-brand .logo{
+    width:50px;
+    height:50px;
+    filter: invert(1);
+}
+
+.header_area .main-menu .navbar .navbar-brand .logo:hover {
+    content: url(../img/logo-color.png);
+    filter: invert(0);
+}
+
+/* end logo */
+
+/* menu lines(toggler) icon color */
+.header_area .main-menu .navbar .navbar-toggler-icon{
+    filter: invert(1);
+}
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar {
+    padding: 1rem 5rem;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    display: inline-block;
+    /*font-family:'Courier_Prime';*/
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 0;
+    margin-right: 2rem;
+    color:var(--title-color);
+    
+}
+
+/* start link hover effect */
+.header_area .main-menu .nav-item .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+
+.header_area .main-menu .navbar-nav .nav-item .nav-link.active::after {
+    width: 100%;
+}
+
+.header_area .main-menu .navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+/* end link hover effect */
+
+
+
+
+.header_area .main-menu .nav-link .active a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar {
+    background-color: var(--primary-color);
+}
+/* End Navigation */
+
+/* Start Banner Area */
+
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+
+.site-main .site-banner .site-title h3::after{
+    content:"";
+    height:2px;
+    width:8vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+
+}
+
+.site-main .site-banner .site-title h1{
+    font-size:5rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size:1.5rem;
+}
+
+.site-banner img { 
+    padding: 7rem 0;
+    width: 900rem;
+}
+
+/* End Banner Area */
+
+/* Start About Us Area */
+
+.site-main .about-area{
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font:normal bold 49px/ 60px 'Courier New', Courier, monospace;
+    letter-spacing: 21px;
+}
+
+.site-main .about-area .about-title .paragraph{
+    padding: 4rem 0;
+}
+
+.site-main .about-area img{
+    padding-top: 3rem;
+}
+/* End About Us Area */
+
+/* Start Services Area */
+.site-main .services-area {
+    padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-title {
+    padding: 0 14rem;
+}
+
+.site-main .services-area .services-title h1, .site-main .products-area .products-title h1{
+   font-size: 35px;
+}
+
+.site-main > .services-area .services{
+    border: 6px solid #eeeeee;
+    border-radius: 10%;
+    padding: .5rem 0;
+    width:16rem;
+    margin:5rem 1rem .5rem;
+    transition: background .7s ease;
+}
+
+.site-main > .services-area .services img{
+    border-radius: 50%;
+    height: 100px;
+    width:100px;
+}
+
+.site-main > .services-area .services:hover{
+    background:#f5f5f5;
+}
+
+/* End Services Area */
+
+/* Start Products Area */
+.our-product img {
+    height: auto;
+    width: 100%;
+}
+
+.site-main .products-area{
+    padding: 4rem 0;
+}
+
+.site-main .products-area .g-0 .our-product .img a:hover img{
+    filter:brightness(1.1) drop-shadow(1px 8px 30px #b1afaf)
+}
+
+/* End Products Area */
+
+/* Start Clients Area */
+
+.site-main .clients-area .clients-title p{
+    padding:1rem 7rem;
+}
+
+.site-main .clients-area .client{
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin:3rem 0rem;
+}
+
+.site-main .clients-area .client .client-img{
+    padding:2rem;
+}
+
+.site-main .clients-area .client .about-client{
+    padding-top: 2rem;
+}
+
+.site-main .clients-area .client .about-client h4{
+    font: normal 600 21px/ 20px 'Courier New', Courier, monospace;
+}
+
+.site-main .clients-area .client .about-client p{
+    font-size: 14px;
+}
+
+.site-main .clients-area .owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.site-main .clients-area .owl-carousel .owl-dots .owl-dot.active span{
+    background: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}
+
+
+/* End Clients Area */
+
+/* Start Booking Area */
+
+.site-main .booking-area .book{
+    background-color: var(--primary-color);
+    border-radius: 2%;
+    padding: 5rem 0;
+    margin: 3rem auto;
+}
+
+.site-main .booking-area .book .booking-title h4{
+    font:normal 700 30px/ 30px;
+    color:whitesmoke;
+}
+
+.site-main .booking-area .book .booking-title p{
+    color:whitesmoke;
+    padding: 1rem 4rem;
+}
+
+
+.site-main .booking-area .book form .input-textbox input{
+    width: 400px;
+    padding: 1rem 1rem;
+    border:1px solid whitesmoke;
+    background: transparent;
+    color:white;
+    font:normal 500 17px/20px 'Courier New', Courier, monospace; 
+}
+
+.site-main .booking-area .book form .input-textbox input::placeholder{
+    color:whitesmoke;
+}
+
+.site-main .booking-area .book form .btn-submit button{
+    background-color: var(--secondary-color);
+    border:transparent;
+    padding: .7rem 2rem;
+}
+
+.site-main .booking-area .book form label {
+    color:whitesmoke;
+    font:normal 600 17px/20px 'Courier New', Courier, monospace;
+}
+
+.site-main .booking-area .book form .date{
+    width: 200px;
+    padding: 1rem 1rem;
+    border:1px solid whitesmoke;
+    background: transparent;
+    color:white;
+    font:normal 500 17px/20px 'Courier New', Courier, monospace; 
+    color-scheme: dark;
+}
+
+.site-main .booking-area .book form input{
+    border-radius: 5px;
+    border: transparent;
+    font:normal 600 17px/20px 'Courier New', Courier, monospace;
+    text-align: center;
+    margin:5px;
+}
+
+/* Select */
+.site-main .booking-area .book form select{
+    background-color: var(--primary-color);
+    color:whitesmoke;
+}
+
+/* Payment tab*/
+.site-main .booking-area .book form .tile{
+    height: 200px;
+    width: 170px;
+    position:relative;
+    margin:1rem;
+}
+
+.site-main .booking-area .book form .tile input[type="checkbox"]{
+    margin: 0;
+    -webkit-appearance: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    outline: none;
+    box-shadow: 15px 15px 25px rgba(2,28,53,0.05);
+}
+
+.site-main .booking-area .book form .tile input[type="checkbox"]:after{
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f111"; /*circle icon*/
+    font-size: 22px;
+    top: 10px;
+    left: 10px;
+    color: #e2e6f3;
+}
+
+.site-main .booking-area .book form .tile input[type="checkbox"]:hover{
+    transform: scale(1.08);
+}
+
+.site-main .booking-area .book form .tile input[type="checkbox"]:checked {
+    border: 3px solid #478bfb;
+}
+
+.site-main .booking-area .book form .tile input[type="checkbox"]:checked:after{
+    font-weight: 900;
+    content: "\f058"; /*check icon*/
+    color: #478bfb;
+}
+
+.site-main .booking-area .book form .tile label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.site-main .booking-area .book form .tile label .fas{
+    font-size: 60px;
+    color: var(--secondary-color);
+}
+
+.site-main .booking-area .book form .tile input[type="checkbox"]:checked + label .fas{
+    animation: grow 0.5s;
+}
+
+@keyframes grow{
+    50%{
+        font-size: 80px;
+    }
+}
+
+.site-main .booking-area .book form .tile label h6{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+
+/*end payment*/
+
+/* End Booking Area */
+
+/* Start Footer Area */
+.footer-area .logo{
+    width:50px;
+    height:50px;
+}
+
+footer.footer-area{
+    padding: 3rem 0;
+    background-color: #f5f5f5;
+}
+
+footer.footer-area .social h5{
+    font:normal 600 23px/ 30px 'Courier New', Courier, monospace; 
+}
+
+
+footer.footer-area .social a > i{
+    font-size: 22px;
+    padding: 1rem;
+    color: #4f4f4f;
+}
+
+footer.footer-area .social a:hover > i{
+    color: blue;
+}
+/* End Footer Area */
