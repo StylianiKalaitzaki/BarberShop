@@ -284,6 +284,14 @@
     color-scheme: dark;
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
 .site-main .booking-area .book form input{
     border-radius: 5px;
     border: transparent;
