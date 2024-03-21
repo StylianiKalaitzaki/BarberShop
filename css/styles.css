@@ -234,7 +234,7 @@
 
 .site-main .booking-area .book{
     background-color: var(--primary-color);
-    border-radius: 2%;
+    border-radius: 5rem;
     padding: 5rem 0;
     margin: 3rem auto;
 }
@@ -286,6 +286,11 @@
 
 input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
+}
+
+.site-main .booking-area .book .day-label{
+    padding:0.5rem;
+    border-radius: 0.5rem;
 }
 
 .hidden{
