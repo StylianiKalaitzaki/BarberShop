@@ -86,4 +86,34 @@ var formattedDate = today.toISOString().split('T')[0];
 // Set the minimum attribute of the date input to today's date
 document.getElementById('date').setAttribute('min', formattedDate);
 
+// Set a Selector listener on the selected day
+document.getElementById('date').addEventListener('change', function() {
+    var selectedDate = this.value;
+    var label = document.querySelector('.day-label');
+
+
+    if(selectedDate){
+        selectedDate = new Date(selectedDate);
+        
+            
+        var daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        
+        var dayOfWeek = daysOfWeek[selectedDate.getDay()];
+        var month = months[selectedDate.getMonth()];
+        var day = selectedDate.getDate();
+        
+        //alert(dayOfWeek + ', ' + month + ', ' + day);
+        var formattedDate = dayOfWeek + ', ' + month + ' ' + day;
+        
+        label.classList.remove('hidden');
+        label.style.color = 'white';
+        label.style.background = 'var(--secondary-color)';
+        document.querySelector('.day-label').innerHTML = formattedDate;
+    }else{
+        label.classList.add('hidden');
+    }
+
+});
+
 });
