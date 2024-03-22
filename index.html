@@ -467,13 +467,29 @@
                 </div>
                 <div class="tab-pane fade" id="nav-time" role="tabpanel" aria-labelledby="nav-time-tab">
 
-                  <div class="col py-4">
-                    <form>
-                      <label for="date">Pick a date:</label>
-                      <input type="date" id="date" class="date" placeholder="dd-mm-yyyy" min="">
-                    </form> 
+                 <div class="row py-4">
+                    <div class="col">
+                      <form>
+                        <label for="date">Pick a date:</label>
+                        <input type="date" id="date" class="date" placeholder="dd-mm-yyyy" min="">
+                      </form> 
+                    </div>
 
-                    <label class="day-label hidden"></label>
+                    <div class="col">
+                      <label class="day-label hidden"></label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <!--<div class="col"></div>-->
+                    <div class="col offset-6">
+                      <div class="time-select">
+                        <input type="radio" name="time" id="card"/>
+                        <label for="card">Card</label>
+                        <input type="radio" name="time" id="cash"/>
+                        <label for="cash">Cash</label>
+                      </div>
+                    </div>
                   </div>
 
                   <div class="row d-flex flex-row flex-wrap py-4">
