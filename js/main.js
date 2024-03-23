@@ -90,6 +90,7 @@ document.getElementById('date').setAttribute('min', formattedDate);
 document.getElementById('date').addEventListener('change', function() {
     var selectedDate = this.value;
     var label = document.querySelector('.day-label');
+    var timeSelect = document.querySelector('.time-select');
 
 
     if(selectedDate){
@@ -110,8 +111,11 @@ document.getElementById('date').addEventListener('change', function() {
         label.style.color = 'white';
         label.style.background = 'var(--secondary-color)';
         document.querySelector('.day-label').innerHTML = formattedDate;
+        timeSelect.classList.remove('hidden');
+
     }else{
         label.classList.add('hidden');
+        timeSelect.classList.add('hidden');
     }
 
 });
