@@ -76,6 +76,41 @@ $( "#secondary-btn" ).click(function() {
     }, 10);
 });
 
+
+
+/* **************** START Next Tab Buttons ****************  */
+
+const nextButtons = document.querySelectorAll('.btn-next');
+const tabLists = document.querySelectorAll('.nav-tabs .nav-link');
+
+nextButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+    const currentTab = document.querySelector('.nav-tabs .nav-link.active');
+    const currentIndex = Array.from(tabLists).indexOf(currentTab);
+    const nextIndex = (currentIndex + 1) % tabLists.length;
+    tabLists[nextIndex].click();
+    });
+});
+/* **************** END Next Tab Buttons **************** */
+
+/* **************** START Back Tab Buttons **************** */
+
+const backButtons = document.querySelectorAll('.btn-back');
+
+backButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+    const currentTab = document.querySelector('.nav-tabs .nav-link.active');
+    const currentIndex = Array.from(tabLists).indexOf(currentTab);
+    const nextIndex = (currentIndex - 1) % tabLists.length;
+    tabLists[nextIndex].click();
+    });
+});
+
+/* **************** END Back Tab Buttons **************** */
+
+
+
+    
 /* **************** Date Input **************** */
 // Get today's date
 var today = new Date();
